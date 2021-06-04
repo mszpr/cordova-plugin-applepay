@@ -82,7 +82,7 @@ Detects if the current device supports Apple Pay and has any cards of `supported
 ```ecmascript 6
 ApplePay.canMakePayments({
   // supportedNetworks should not be an empty array. The supported networks currently are: amex, discover, masterCard, visa
-  supportedNetworks: ['visa', 'amex'],
+  supportedNetworks: ['visa', 'amex', 'mada'],
   
   // when merchantCapabilities is passed in, supportedNetworks must also be provided. Valid values: 3ds, debit, credit, emv
   merchantCapabilities: ['3ds', 'debit', 'credit']
@@ -199,7 +199,7 @@ ApplePay.makePaymentRequest(
                   amount: 6.99
               }
           ],
-          supportedNetworks: ['visa', 'masterCard', 'discover'],
+          supportedNetworks: ['mada','visa', 'masterCard', 'discover'],
           merchantCapabilities: ['3ds', 'debit', 'credit'],          
           merchantIdentifier: 'merchant.apple.test',
           currencyCode: 'GBP',
@@ -318,7 +318,7 @@ catch (err) {
 ```
 
 ## Limitations and TODOs
-* *Support more networks* - currently only Visa, MasterCard, American Express and Discover are accepted as config options.
+* *Support more networks* - currently only mada , Visa, MasterCard, American Express and Discover are accepted as config options.
 * *Event binds for delivery method selector* - An event can be raised when the customer
 selects different delivery options, so the merchant can update the delivery charges.
 
