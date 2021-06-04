@@ -10,7 +10,7 @@ processor you use.
 
 ## Installation
 ```
-$ cordova plugin add cordova-plugin-applepay
+$ cordova plugin add https://github.com/mszpr/cordova-plugin-applepay.git
 ```
 
 Install the plugin using Cordova 6 and above, which is based on [npm](https://www.npmjs.com/package/cordova-plugin-applepay). The plugin
