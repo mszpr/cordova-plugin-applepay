@@ -13,13 +13,13 @@ iOS
 
 ## Installation
 
-For ionic
+For ionic native cordova 
 ```
 $ cordova plugin add https://github.com/mszpr/cordova-plugin-applepay.git
 $ npm install @ionic-native/apple-pay
 ```
 
-For only cordova 
+For cordova only
 ```
 $ cordova plugin add https://github.com/mszpr/cordova-plugin-applepay.git
 ```
