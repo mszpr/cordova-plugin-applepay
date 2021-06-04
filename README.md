@@ -8,10 +8,23 @@ This plugin is compatible with any payment processor (eg Stripe, Adyen etc) beca
 the payment token is handled back your JavaScript application to pass to which ever payment
 processor you use.
 
+## Supported Platforms
+iOS
+
 ## Installation
+
+For ionic
+```
+$ cordova plugin add https://github.com/mszpr/cordova-plugin-applepay.git
+$ npm install @ionic-native/apple-pay
+```
+
+For only cordova 
 ```
 $ cordova plugin add https://github.com/mszpr/cordova-plugin-applepay.git
 ```
+
+
 
 Install the plugin using Cordova 6 and above, which is based on [npm](https://www.npmjs.com/package/cordova-plugin-applepay). The plugin
 exposes the `window.ApplePay` global in the browser.
